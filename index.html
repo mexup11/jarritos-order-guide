@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Order Guide</title>
+<style>
+  @page { size: letter portrait; margin: 0.5in; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #fff; color: #111; font-family: Helvetica, Arial, sans-serif; }
+  body { padding: 0.5in; max-width: 8.5in; margin: 0 auto; }
+  @media screen { body { background: #e9e9e9; } .page { background: #fff; padding: 0.5in; box-shadow: 0 2px 14px rgba(0,0,0,.18); } }
+  @media print { body { padding: 0; max-width: none; } .page { padding: 0; } }
+
+  header { display: flex; align-items: flex-end; justify-content: space-between; border-bottom: 3px solid #111; padding-bottom: 8px; margin-bottom: 14px; }
+  header h1 { margin: 0; font-size: 26px; letter-spacing: 0.5px; line-height: 1; }
+  header .sub { font-size: 11px; color: #666; margin-top: 5px; text-transform: uppercase; letter-spacing: 1.2px; }
+  .fields { display: flex; gap: 22px; font-size: 13px; }
+  .fields span { display: inline-block; border-bottom: 1.5px solid #111; width: 1.7in; margin-left: 6px; }
+
+  .grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; }
+  .card { border: 1.5px solid #222; border-radius: 10px; padding: 12px 6px 10px; text-align: center; display: flex; flex-direction: column; align-items: center; break-inside: avoid; }
+  .card img { height: 2.1in; width: auto; max-width: 100%; object-fit: contain; }
+  .card .name { font-weight: 700; font-size: 12px; margin: 8px 0 6px; line-height: 1.15; min-height: 30px; display: flex; align-items: center; justify-content: center; }
+  .card .qty { width: 0.75in; height: 0.75in; border: 2px solid #222; border-radius: 6px; margin-top: 4px; }
+  .card .label { font-size: 9px; text-transform: uppercase; letter-spacing: 1.5px; color: #666; margin-top: 5px; }
+
+  footer { margin-top: 12px; font-size: 11px; color: #555; display: flex; justify-content: space-between; border-top: 1px solid #bbb; padding-top: 8px; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div><h1>Drinks Order Guide</h1><div class="sub">Weekly beverage order</div></div>
+    <div class="fields">
+      <div>Date:<span></span></div>
+      <div>Name:<span></span></div>
+    </div>
+  </header>
+
+  <div class="grid">
+    <div class="card"><img src="images/mandarin.png" alt="Jarritos Mandarin"><div class="name">Jarritos Mandarin</div><div class="qty"></div><div class="label">Qty</div></div>
+    <div class="card"><img src="images/lime.png" alt="Jarritos Lime"><div class="name">Jarritos Lime</div><div class="qty"></div><div class="label">Qty</div></div>
+    <div class="card"><img src="images/pineapple.png" alt="Jarritos Pineapple"><div class="name">Jarritos Pineapple</div><div class="qty"></div><div class="label">Qty</div></div>
+    <div class="card"><img src="images/strawberry.png" alt="Jarritos Strawberry"><div class="name">Jarritos Strawberry</div><div class="qty"></div><div class="label">Qty</div></div>
+    <div class="card"><img src="images/grapefruit.png" alt="Jarritos Grapefruit"><div class="name">Jarritos Grapefruit</div><div class="qty"></div><div class="label">Qty</div></div>
+    <div class="card"><img src="images/guava.png" alt="Jarritos Guava"><div class="name">Jarritos Guava</div><div class="qty"></div><div class="label">Qty</div></div>
+    <div class="card"><img src="images/fruit-punch.png" alt="Jarritos Fruit Punch"><div class="name">Jarritos Fruit Punch</div><div class="qty"></div><div class="label">Qty</div></div>
+    <div class="card"><img src="images/mexican-coke.png" alt="Mexican Coca-Cola 500 mL"><div class="name">Mexican Coke<br>500 mL</div><div class="qty"></div><div class="label">Qty</div></div>
+    <div class="card"><img src="images/senorial-sangria.png" alt="Sangría Señorial"><div class="name">Sangría Señorial</div><div class="qty"></div><div class="label">Qty</div></div>
+    <div class="card"><img src="images/sidral-mundet.png" alt="Sidral Mundet"><div class="name">Sidral Mundet</div><div class="qty"></div><div class="label">Qty</div></div>
+    <div class="card"><img src="images/mineragua.png" alt="Jarritos Mineragua Soda Water"><div class="name">Jarritos Soda Water</div><div class="qty"></div><div class="label">Qty</div></div>
+    <div class="card"><img src="images/topo-chico.png" alt="Topo Chico"><div class="name">Topo Chico</div><div class="qty"></div><div class="label">Qty</div></div>
+  </div>
+
+  <footer>
+    <div>Write the number of cases needed in each box.</div>
+    <div>Notes: ________________________________________</div>
+  </footer>
+</div>
+</body>
+</html>
